@@ -11,8 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 
 ActiveRecord::Schema.define(version: 20151005161518) do
+=======
+ActiveRecord::Schema.define(version: 20150417050953) do
+>>>>>>> Implement simplified commercials workflow
 
   create_table "ahoy_events", force: true do |t|
     t.uuid     "visit_id"
@@ -80,6 +84,7 @@ ActiveRecord::Schema.define(version: 20151005161518) do
     t.string   "commercialable_type"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "url"
   end
 
   create_table "conferences", force: true do |t|
